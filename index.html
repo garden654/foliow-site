@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foliow — Desktop Companion for Web-Novel Authors</title>
+  <meta name="description" content="Foliow is a fully offline desktop application that helps web-novel authors organize their works, characters, worldbuilding, plot timelines, and writing progress.">
+  <link rel="icon" type="image/png" href="icon.png">
+  <style>
+    :root {
+      --bg: #faf9f6;
+      --surface: #ffffff;
+      --text: #1a1a1a;
+      --text-muted: #5a5a5a;
+      --border: #e7e5df;
+      --accent: #2c5f3e;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 72px 24px 96px;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      margin-bottom: 24px;
+    }
+    header img {
+      width: 64px;
+      height: 64px;
+      border-radius: 14px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: -0.6px;
+    }
+    .tagline {
+      font-size: 19px;
+      color: var(--text-muted);
+      margin: 0 0 56px;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    h2 {
+      font-size: 18px;
+      margin: 0 0 14px;
+      font-weight: 600;
+      letter-spacing: -0.2px;
+    }
+    p {
+      margin: 0 0 12px;
+    }
+    .availability {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 22px 24px;
+    }
+    .availability p { margin: 0; }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid currentColor;
+    }
+    a:hover { opacity: 0.7; }
+    code {
+      background: #f0eee8;
+      padding: 1px 6px;
+      border-radius: 4px;
+      font-size: 0.92em;
+      font-family: "SF Mono", Menlo, Consolas, monospace;
+    }
+    footer {
+      margin-top: 72px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      color: var(--text-muted);
+      font-size: 14px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    footer a { border-bottom: none; }
+    footer a:hover { border-bottom: 1px solid currentColor; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="icon.png" alt="Foliow icon">
+      <h1>Foliow</h1>
+    </header>
+
+    <p class="tagline">A fully offline desktop companion for web-novel authors.</p>
+
+    <section>
+      <h2>About</h2>
+      <p>
+        Foliow helps web-novel authors organize the full surface of a long-form
+        project — works, characters, worldbuilding, plot timelines, publisher
+        contracts, and writing progress — in a single desktop application built
+        on Electron for Windows and macOS.
+      </p>
+      <p>
+        All user data is stored locally on the user's own computer. Foliow does
+        not operate any cloud backend and does not transmit user content to any
+        third party by default.
+      </p>
+    </section>
+
+    <section>
+      <h2>Optional Dropbox Backup</h2>
+      <p>
+        Users may optionally connect their own Dropbox account to back up and
+        restore their Foliow data archives (<code>.zip</code> files containing
+        project data). When connected, Foliow only reads and writes inside its
+        own app-scoped folder (<code>Apps/Foliow/</code>) and does not access
+        any other files in the user's Dropbox.
+      </p>
+      <p>
+        Dropbox access is fully opt-in. Users initiate the OAuth flow from
+        within the app and can disconnect at any time.
+      </p>
+    </section>
+
+    <section>
+      <h2>Availability</h2>
+      <div class="availability">
+        <p>
+          Foliow is currently distributed to backers through a crowdfunding
+          campaign on
+          <a href="https://tumblbug.com/" target="_blank" rel="noopener">Tumblbug</a>,
+          a Korean crowdfunding platform. Builds are provided for Windows and
+          macOS, with offline license verification.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>
+        For inquiries, support requests, or privacy-related questions:
+        <a href="mailto:gardensdv33@gmail.com">gardensdv33@gmail.com</a>
+      </p>
+    </section>
+
+    <footer>
+      <div>&copy; 창파집 (Changpajip) &middot; Foliow</div>
+      <div><a href="privacy.html">Privacy Policy</a></div>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Foliow</title>
+  <meta name="description" content="Privacy policy for the Foliow desktop application.">
+  <link rel="icon" type="image/png" href="icon.png">
+  <style>
+    :root {
+      --bg: #faf9f6;
+      --surface: #ffffff;
+      --text: #1a1a1a;
+      --text-muted: #5a5a5a;
+      --border: #e7e5df;
+      --accent: #2c5f3e;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 72px 24px 96px;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      margin-bottom: 24px;
+    }
+    header img {
+      width: 56px;
+      height: 56px;
+      border-radius: 12px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: -0.4px;
+    }
+    .meta {
+      color: var(--text-muted);
+      font-size: 14px;
+      margin: 0 0 48px;
+    }
+    section { margin-bottom: 32px; }
+    h2 {
+      font-size: 17px;
+      margin: 0 0 10px;
+      font-weight: 600;
+      letter-spacing: -0.1px;
+    }
+    p { margin: 0 0 10px; }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid currentColor;
+    }
+    a:hover { opacity: 0.7; }
+    code {
+      background: #f0eee8;
+      padding: 1px 6px;
+      border-radius: 4px;
+      font-size: 0.92em;
+      font-family: "SF Mono", Menlo, Consolas, monospace;
+    }
+    footer {
+      margin-top: 72px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      color: var(--text-muted);
+      font-size: 14px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    footer a { border-bottom: none; }
+    footer a:hover { border-bottom: 1px solid currentColor; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="icon.png" alt="Foliow icon">
+      <h1>Privacy Policy</h1>
+    </header>
+
+    <p class="meta">Foliow desktop application &middot; Last updated: 2026-05-20</p>
+
+    <section>
+      <h2>1. Data Collection</h2>
+      <p>
+        Foliow is a fully offline desktop application. All user-created data
+        (works, characters, worldbuilding, manuscripts, publisher contracts,
+        and writing progress) is stored only on the user's own computer.
+        Foliow does not operate any server and does not transmit user content
+        to any third party by default.
+      </p>
+    </section>
+
+    <section>
+      <h2>2. Dropbox Integration (Optional)</h2>
+      <p>
+        If the user chooses to connect a Dropbox account, Foliow uses Dropbox
+        solely to read and write backup archives (<code>.zip</code> files)
+        inside the app-scoped <code>Apps/Foliow/</code> folder. Foliow does
+        not access any other files in the user's Dropbox account.
+      </p>
+      <p>
+        The Dropbox connection is initiated by the user from within the app
+        and can be disconnected at any time. Disconnecting removes the locally
+        stored authentication tokens.
+      </p>
+    </section>
+
+    <section>
+      <h2>3. Authentication Tokens</h2>
+      <p>
+        OAuth tokens received from Dropbox are stored on the user's local
+        computer using the operating system's secure storage facility
+        (Electron <code>safeStorage</code>, backed by the OS keychain on
+        macOS and DPAPI on Windows). Tokens are never transmitted to any
+        server operated by the developer.
+      </p>
+    </section>
+
+    <section>
+      <h2>4. Auto-Update</h2>
+      <p>
+        Foliow checks for new releases by querying public GitHub release
+        metadata. No personal information is transmitted in this request
+        beyond standard HTTP headers required by the protocol.
+      </p>
+    </section>
+
+    <section>
+      <h2>5. License Verification</h2>
+      <p>
+        License keys are verified entirely offline using Ed25519
+        cryptographic signatures. No license activation data is sent to any
+        server.
+      </p>
+    </section>
+
+    <section>
+      <h2>6. Third Parties</h2>
+      <p>
+        Foliow does not use analytics, telemetry, advertising SDKs, or any
+        third-party tracking services. The only optional external service is
+        Dropbox, as described in section 2.
+      </p>
+    </section>
+
+    <section>
+      <h2>7. Changes to This Policy</h2>
+      <p>
+        If this policy is updated, the &quot;Last updated&quot; date at the
+        top of this page will reflect the most recent revision. Material
+        changes that affect how user data is handled will be communicated
+        through the application's release notes.
+      </p>
+    </section>
+
+    <section>
+      <h2>8. Contact</h2>
+      <p>
+        For any privacy-related questions or requests, please contact:
+        <a href="mailto:gardensdv33@gmail.com">gardensdv33@gmail.com</a>
+      </p>
+    </section>
+
+    <footer>
+      <div>&copy; 창파집 (Changpajip) &middot; Foliow</div>
+      <div><a href="index.html">Back to Foliow</a></div>
+    </footer>
+  </div>
+</body>
+</html>
